@@ -44,7 +44,7 @@ const reviews = await scraper("url", { sort_type: "sort_type", search_query: "se
 ### Arguments
 `url` - `string`: A google maps place url as explained [here](https://github.com/YasogaN/google-maps-review-scraper/blob/main/docs/urls/place.md) 
 
-`sort_type` - `string`: The sort parameter (`"relevent"`, `"newest"`, `"highest_rating"`, `"lowest_rating"`). Defaults to `"relevent"`
+`sort_type` - `string`: The sort parameter (`"relevant"`, `"newest"`, `"highest_rating"`, `"lowest_rating"`). Defaults to `"relevant"`
 
 `search_query` - `string`: Search query to search in reviews. Defaults to nothing.
 

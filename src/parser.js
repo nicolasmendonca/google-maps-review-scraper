@@ -1,7 +1,7 @@
 /**
  * Parses an array of reviews and returns a minified JSON string of the parsed reviews.
  * @param {Array} reviews - The array of reviews to parse. Each review is expected to be an array with specific nested structures.
- * @returns {Promise<string>} A promise that resolves to a JSON string of the parsed reviews.
+ * @returns {Promise<Array<import('./types.d.ts').Review>>} A promise that resolves to an array of parsed reviews.
  *
  */
 export default async function parseReviews(reviews) {
@@ -39,5 +39,5 @@ export default async function parseReviews(reviews) {
         source: review[1][13][0],
     })));
 
-    return JSON.stringify(parsedReviews, null, 2);
+    return parsedReviews;
 }
